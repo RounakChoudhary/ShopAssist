@@ -14,7 +14,7 @@ llm_api_key = os.getenv("OPENAI_API_KEY")
 if not llm_api_key:
     raise RuntimeError("OPENAI_API_KEY is not set in the environment variables.")
 
-# Initialize the user with the provided API key and the Groq Api endpoint
+# Initialize the client with the API key and Groq endpoint
 client = AsyncOpenAI(
     api_key = llm_api_key,
     base_url = "https://api.groq.com/openai/v1"
@@ -86,7 +86,7 @@ async def chat(request: ChatRequest):
                 return {"response" : "Gatekeeper classified this as a database query"}
             
             # If the gatekeeper classifies it as a main LLM request, we proceed to call the main LLM
-            else:
+            elif prompt_intent == "main_llm":
                 
                 #────────────── 
                 # THE MAIN SHOPPING LLM
@@ -106,7 +106,12 @@ async def chat(request: ChatRequest):
                 ai_reply = response.choices[0].message.content
                 return {"response": ai_reply}
 
+    except HTTPException:
+        raise
+
     except Exception as e:
         print(f"Backend Exception: {str(e)}")
-        raise HTTPException(status_code=500, detail="Internal processing error.")
-        
+        raise HTTPException(
+            status_code=500,
+            detail="Internal processing error."
+        )
