@@ -1,101 +1,116 @@
-Product ID,Product Name,Category,Price (USD),Stock Quantity,Rating,Number of Reviews,Seller Name,Discount Percentage,Sales Count
-P1000,Product 1,Clothing,295.28,93,2.9,190,BeautyCare,0,7441
-P1001,Product 2,Sports,323.12,126,4.6,105,SportsZone,20,3097
-P1002,Product 3,Sports,494.66,32,4.8,3017,SportsZone,5,9671
-P1003,Product 4,Home & Kitchen,434.72,147,3.5,2953,ToyGalaxy,0,4805
-P1004,Product 5,Home & Kitchen,248.15,18,2.6,3977,TechStore,15,3829
-P1005,Product 6,Clothing,382.43,18,3.8,4294,HomeEssentials,25,7929
-P1006,Product 7,Beauty,198.14,31,4.3,2750,SportsZone,20,5264
-P1007,Product 8,Electronics,155.78,91,3.2,1341,TechStore,25,1670
-P1008,Product 9,Beauty,159.32,131,2.8,3991,ToyGalaxy,30,13
-P1009,Product 10,Beauty,31.61,109,3.7,3062,ToyGalaxy,10,1871
-P1010,Product 11,Sports,171.95,159,4.6,1706,TechStore,5,8111
-P1011,Product 12,Books,437.07,78,3.2,4100,BeautyCare,10,8570
-P1012,Product 13,Books,129.09,185,2.9,2937,ToyGalaxy,25,963
-P1013,Product 14,Beauty,391.27,154,3.1,1233,HomeEssentials,30,4218
-P1014,Product 15,Home & Kitchen,287.72,40,3.9,3336,FashionHub,5,5397
-P1015,Product 16,Electronics,176.65,171,4.0,709,BookWorld,20,2855
-P1016,Product 17,Home & Kitchen,265.42,116,2.9,2646,SportsZone,0,8780
-P1017,Product 18,Home & Kitchen,181.12,1,2.8,3734,FashionHub,0,8481
-P1018,Product 19,Electronics,107.41,90,4.0,2244,TechStore,0,7987
-P1019,Product 20,Beauty,282.47,177,2.7,2785,BeautyCare,0,146
-P1020,Product 21,Sports,136.69,26,4.1,2295,FashionHub,20,4629
-P1021,Product 22,Electronics,176.04,63,3.5,166,TechStore,0,9640
-P1022,Product 23,Electronics,248.61,49,2.5,2334,ToyGalaxy,30,6378
-P1023,Product 24,Toys,368.82,28,4.3,458,SportsZone,15,6128
-P1024,Product 25,Clothing,184.46,105,4.6,4766,FashionHub,15,6195
-P1025,Product 26,Clothing,174.48,31,4.8,1311,HomeEssentials,5,3482
-P1026,Product 27,Clothing,214.56,74,4.3,609,FashionHub,25,4508
-P1027,Product 28,Beauty,115.56,182,4.0,305,ToyGalaxy,30,5998
-P1028,Product 29,Home & Kitchen,335.45,125,4.3,4251,SportsZone,30,7461
-P1029,Product 30,Beauty,150.33,73,4.0,4901,BookWorld,15,1470
-P1030,Product 31,Home & Kitchen,206.09,48,3.0,2822,ToyGalaxy,5,8332
-P1031,Product 32,Toys,156.43,22,2.8,1115,BeautyCare,25,5075
-P1032,Product 33,Clothing,207.18,192,3.4,577,TechStore,30,3414
-P1033,Product 34,Clothing,142.17,12,4.4,4542,FashionHub,25,3786
-P1034,Product 35,Home & Kitchen,421.43,178,2.9,4111,HomeEssentials,0,8783
-P1035,Product 36,Books,338.82,116,2.5,800,FashionHub,0,3958
-P1036,Product 37,Electronics,443.76,106,5.0,1517,TechStore,20,9348
-P1037,Product 38,Home & Kitchen,439.86,155,3.8,2100,TechStore,0,2906
-P1038,Product 39,Beauty,302.96,164,4.1,2750,HomeEssentials,30,8035
-P1039,Product 40,Books,193.16,160,3.5,4864,BeautyCare,15,1
-P1040,Product 41,Beauty,193.73,134,3.5,3798,BookWorld,0,1648
-P1041,Product 42,Books,133.21,144,3.2,3226,BeautyCare,5,9023
-P1042,Product 43,Sports,159.27,3,4.6,767,TechStore,15,1327
-P1043,Product 44,Beauty,360.06,124,3.0,3521,TechStore,0,6267
-P1044,Product 45,Toys,184.98,41,4.7,80,HomeEssentials,0,4968
-P1045,Product 46,Clothing,270.16,21,4.6,2381,HomeEssentials,25,4918
-P1046,Product 47,Home & Kitchen,31.68,174,4.7,2103,ToyGalaxy,30,8300
-P1047,Product 48,Beauty,436.31,197,3.6,3437,BeautyCare,10,9467
-P1048,Product 49,Sports,76.79,172,3.3,1093,ToyGalaxy,5,1171
-P1049,Product 50,Sports,46.23,61,3.4,1909,FashionHub,25,6498
-P1050,Product 51,Toys,401.37,67,3.7,3093,ToyGalaxy,5,8455
-P1051,Product 52,Clothing,465.45,193,4.7,2127,HomeEssentials,15,7337
-P1052,Product 53,Home & Kitchen,333.01,190,4.9,124,ToyGalaxy,15,6200
-P1053,Product 54,Toys,465.7,114,4.8,3463,BeautyCare,25,5757
-P1054,Product 55,Clothing,466.62,9,4.7,42,HomeEssentials,0,1077
-P1055,Product 56,Home & Kitchen,48.57,51,2.6,1697,ToyGalaxy,10,2426
-P1056,Product 57,Books,200.0,22,2.6,3471,BeautyCare,30,5089
-P1057,Product 58,Clothing,408.21,119,3.6,2988,BookWorld,0,9717
-P1058,Product 59,Home & Kitchen,73.46,62,3.4,4578,FashionHub,5,2558
-P1059,Product 60,Toys,12.37,26,4.7,4025,TechStore,10,4079
-P1060,Product 61,Sports,174.62,77,3.3,1638,BeautyCare,0,7939
-P1061,Product 62,Toys,276.92,47,4.7,3182,BookWorld,5,628
-P1062,Product 63,Toys,198.82,59,4.8,1210,BeautyCare,30,7457
-P1063,Product 64,Beauty,301.59,157,4.8,4900,TechStore,10,5057
-P1064,Product 65,Books,16.55,117,4.7,3008,ToyGalaxy,0,4775
-P1065,Product 66,Beauty,357.06,161,3.0,37,HomeEssentials,10,7297
-P1066,Product 67,Beauty,96.87,1,3.4,1315,SportsZone,0,1285
-P1067,Product 68,Electronics,341.56,96,3.3,2588,SportsZone,5,4899
-P1068,Product 69,Home & Kitchen,93.39,161,4.6,3058,BookWorld,20,1541
-P1069,Product 70,Books,381.05,172,4.9,2583,TechStore,15,9697
-P1070,Product 71,Toys,252.75,192,4.0,755,BookWorld,30,882
-P1071,Product 72,Sports,122.19,43,3.6,1687,FashionHub,25,3207
-P1072,Product 73,Beauty,447.93,119,4.2,3134,ToyGalaxy,15,7198
-P1073,Product 74,Toys,137.23,141,3.1,1445,BeautyCare,5,4790
-P1074,Product 75,Home & Kitchen,439.94,34,3.6,2385,ToyGalaxy,15,1246
-P1075,Product 76,Sports,127.15,63,4.3,2436,BeautyCare,5,1486
-P1076,Product 77,Clothing,301.9,7,4.7,3576,HomeEssentials,30,9104
-P1077,Product 78,Books,161.83,147,4.6,678,BeautyCare,15,9801
-P1078,Product 79,Sports,271.05,163,4.0,2330,TechStore,20,4812
-P1079,Product 80,Beauty,271.82,68,2.8,4727,FashionHub,30,5949
-P1080,Product 81,Beauty,345.54,71,4.0,535,FashionHub,25,7013
-P1081,Product 82,Sports,199.13,114,3.8,3299,FashionHub,15,3087
-P1082,Product 83,Electronics,110.92,123,3.9,3529,HomeEssentials,20,6579
-P1083,Product 84,Beauty,178.29,48,4.5,4391,ToyGalaxy,10,8009
-P1084,Product 85,Toys,450.08,108,4.6,1718,SportsZone,0,3896
-P1085,Product 86,Books,49.8,43,4.4,4783,ToyGalaxy,5,2840
-P1086,Product 87,Clothing,313.49,113,4.7,3331,ToyGalaxy,15,4982
-P1087,Product 88,Beauty,246.67,167,3.0,4736,BookWorld,25,7705
-P1088,Product 89,Home & Kitchen,28.61,126,4.5,1739,BookWorld,10,9791
-P1089,Product 90,Clothing,364.98,9,3.1,3483,HomeEssentials,5,8418
-P1090,Product 91,Books,297.63,181,4.8,4459,BookWorld,15,3763
-P1091,Product 92,Toys,293.34,81,2.6,3362,HomeEssentials,25,9680
-P1092,Product 93,Home & Kitchen,152.41,45,4.9,2521,FashionHub,30,971
-P1093,Product 94,Home & Kitchen,249.92,11,2.7,3519,BookWorld,25,5214
-P1094,Product 95,Books,226.01,13,3.9,4201,ToyGalaxy,20,3054
-P1095,Product 96,Sports,489.46,187,4.1,4605,BookWorld,5,7901
-P1096,Product 97,Electronics,296.0,114,4.4,1834,ToyGalaxy,30,8942
-P1097,Product 98,Clothing,9.18,25,4.6,4229,SportsZone,10,9405
-P1098,Product 99,Electronics,447.99,186,3.7,3153,ToyGalaxy,0,2558
-P1099,Product 100,Toys,65.61,195,3.2,1975,FashionHub,0,7463
+product_name,category,price,stock_quantity,rating,num_reviews,seller_name,best_rank,attributes
+Nike Air Zoom Pegasus 41,Shoes,11999,150,4.6,1250,SportX,12,"{""brand"":""Nike"",""size"":42,""color"":""Black"",""material"":""Mesh"",""waterproof"":false,""gender"":""Men"",""sport"":""Running""}"
+Adidas Ultraboost Light,Shoes,15999,85,4.8,2400,SportX,5,"{""brand"":""Adidas"",""size"":44,""color"":""White"",""material"":""Primeknit"",""waterproof"":false,""gender"":""Unisex"",""sport"":""Running""}"
+Puma Velocity Nitro 3,Shoes,8999,0,4.4,320,SportX,45,"{""brand"":""Puma"",""size"":41,""color"":""Red"",""material"":""Mesh"",""waterproof"":false,""gender"":""Men"",""sport"":""Running""}"
+Asics Gel-Kayano 31,Shoes,13999,60,4.9,850,SportX,8,"{""brand"":""Asics"",""size"":43,""color"":""Blue"",""material"":""Synthetic"",""waterproof"":false,""gender"":""Men"",""sport"":""Road Running""}"
+Skechers Go Walk Max,Shoes,3499,210,4.3,1890,FashionHub,22,"{""brand"":""Skechers"",""size"":42,""color"":""Grey"",""material"":""Mesh"",""waterproof"":false,""gender"":""Men"",""sport"":""Walking""}"
+Puma Classic Suede,Shoes,5499,120,4.5,950,UrbanStyle,30,"{""brand"":""Puma"",""size"":40,""color"":""Black"",""material"":""Suede"",""waterproof"":false,""gender"":""Unisex"",""sport"":""Casual""}"
+Nike Air Max 90,Shoes,9999,0,4.7,3100,SportX,9,"{""brand"":""Nike"",""size"":43,""color"":""White"",""material"":""Leather"",""waterproof"":false,""gender"":""Men"",""sport"":""Casual""}"
+Reebok Floatride Energy 5,Shoes,7999,45,4.2,180,SportX,62,"{""brand"":""Reebok"",""size"":42,""color"":""Yellow"",""material"":""Mesh"",""waterproof"":false,""gender"":""Men"",""sport"":""Running""}"
+Adidas Samba OG,Shoes,10999,75,4.8,4200,UrbanStyle,3,"{""brand"":""Adidas"",""size"":41,""color"":""White"",""material"":""Leather"",""waterproof"":false,""gender"":""Unisex"",""sport"":""Casual""}"
+Vans Old Skool Classic,Shoes,4500,300,4.6,5000,UrbanStyle,4,"{""brand"":""Vans"",""size"":42,""color"":""Black"",""material"":""Canvas"",""waterproof"":false,""gender"":""Unisex"",""sport"":""Skate""}"
+Converse Chuck Taylor All Star,Shoes,3999,250,4.5,4800,UrbanStyle,6,"{""brand"":""Converse"",""size"":43,""color"":""Black"",""material"":""Canvas"",""waterproof"":false,""gender"":""Unisex"",""sport"":""Casual""}"
+Under Armour Charged Assert 10,Shoes,5999,90,4.3,450,SportX,42,"{""brand"":""Under Armour"",""size"":44,""color"":""Grey"",""material"":""Mesh"",""waterproof"":false,""gender"":""Men"",""sport"":""Running""}"
+Columbia Redmond III Waterproof,Shoes,7999,35,4.5,280,SportX,40,"{""brand"":""Columbia"",""size"":43,""color"":""Brown"",""material"":""Suede"",""waterproof"":true,""gender"":""Men"",""sport"":""Hiking""}"
+Merrell Moab 3 Hiking Shoes,Shoes,9500,40,4.7,920,SportX,15,"{""brand"":""Merrell"",""size"":42,""color"":""Olive"",""material"":""Leather"",""waterproof"":true,""gender"":""Men"",""sport"":""Hiking""}"
+Nike Pegasus Trail 5 GORE-TEX,Shoes,14999,25,4.8,190,SportX,28,"{""brand"":""Nike"",""size"":43,""color"":""Orange"",""material"":""Synthetic"",""waterproof"":true,""gender"":""Men"",""sport"":""Trail Running""}"
+Salomon Speedcross 6,Shoes,12999,0,4.7,510,SportX,25,"{""brand"":""Salomon"",""size"":42,""color"":""Black"",""material"":""Ripstop"",""waterproof"":true,""gender"":""Men"",""sport"":""Trail Running""}"
+Crocs Classic Clog,Shoes,2995,280,4.6,4900,FashionHub,5,"{""brand"":""Crocs"",""size"":41,""color"":""Navy"",""material"":""Croslite"",""waterproof"":true,""gender"":""Unisex"",""sport"":""Casual""}"
+Bata Men Leather Formal Shoes,Shoes,1999,180,4.0,3100,EliteStore,18,"{""brand"":""Bata"",""size"":42,""color"":""Tan"",""material"":""Leather"",""waterproof"":false,""gender"":""Men"",""sport"":""Formal""}"
+Hush Puppies Formal Slip-Ons,Shoes,4499,95,4.2,640,EliteStore,38,"{""brand"":""Hush Puppies"",""size"":41,""color"":""Black"",""material"":""Leather"",""waterproof"":false,""gender"":""Men"",""sport"":""Formal""}"
+Woodland Leather High-Top Boots,Shoes,5995,110,4.4,1420,UrbanStyle,20,"{""brand"":""Woodland"",""size"":42,""color"":""Khaki"",""material"":""Nubuck"",""waterproof"":true,""gender"":""Men"",""sport"":""Hiking""}"
+Puma Regular Fit Crew Neck T-Shirt,T-Shirts,799,150,4.1,890,FashionHub,45,"{""brand"":""Puma"",""size"":""L"",""color"":""Blue"",""fit"":""Regular"",""fabric"":""Cotton"",""gender"":""Men""}"
+Nike Dri-FIT Training T-Shirt,T-Shirts,1899,120,4.5,1450,SportX,16,"{""brand"":""Nike"",""size"":""M"",""color"":""Black"",""fit"":""Athletic"",""fabric"":""Polyester"",""gender"":""Men""}"
+Adidas Badge of Sport Tee,T-Shirts,1299,200,4.4,2100,SportX,12,"{""brand"":""Adidas"",""size"":""XL"",""color"":""White"",""fit"":""Regular"",""fabric"":""Cotton"",""gender"":""Men""}"
+Levi's Housemark Graphic Tee,T-Shirts,999,0,4.2,3200,FashionHub,11,"{""brand"":""Levi's"",""size"":""M"",""color"":""Red"",""fit"":""Regular"",""fabric"":""Cotton"",""gender"":""Men""}"
+U.S. Polo Assn. Solid Polo,T-Shirts,1499,180,4.3,2750,EliteStore,14,"{""brand"":""U.S. Polo Assn."",""size"":""L"",""color"":""Green"",""fit"":""Slim"",""fabric"":""Pique Cotton"",""gender"":""Men""}"
+Tommy Hilfiger Classic Polo T-Shirt,T-Shirts,2999,80,4.6,850,EliteStore,24,"{""brand"":""Tommy Hilfiger"",""size"":""M"",""color"":""Navy"",""fit"":""Regular"",""fabric"":""Pique Cotton"",""gender"":""Men""}"
+Jack & Jones Printed Crew Neck,T-Shirts,699,160,3.9,410,UrbanStyle,75,"{""brand"":""Jack & Jones"",""size"":""S"",""color"":""Grey"",""fit"":""Slim"",""fabric"":""Cotton Blend"",""gender"":""Men""}"
+Under Armour Tech 2.0 Tee,T-Shirts,1699,95,4.6,1100,SportX,20,"{""brand"":""Under Armour"",""size"":""L"",""color"":""Teal"",""fit"":""Loose"",""fabric"":""Polyester"",""gender"":""Men""}"
+Decathlon Quechua Hiking Tee,T-Shirts,499,250,4.2,3400,SportX,13,"{""brand"":""Decathlon"",""size"":""XL"",""color"":""Grey"",""fit"":""Regular"",""fabric"":""Polyester"",""gender"":""Unisex""}"
+Allen Solly Solid Cotton Tee,T-Shirts,599,0,4.0,150,EliteStore,82,"{""brand"":""Allen Solly"",""size"":""M"",""color"":""Yellow"",""fit"":""Regular"",""fabric"":""Cotton"",""gender"":""Men""}"
+Levi's 511 Slim Fit Jeans,Jeans,2899,140,4.4,4500,FashionHub,7,"{""brand"":""Levi's"",""waist"":32,""length"":34,""fit"":""Slim"",""stretch"":true,""color"":""Dark Blue""}"
+Levi's 501 Original Fit Jeans,Jeans,3499,95,4.6,3100,FashionHub,9,"{""brand"":""Levi's"",""waist"":34,""length"":32,""fit"":""Straight"",""stretch"":false,""color"":""Light Indigo""}"
+Wrangler Texas Authentic Jeans,Jeans,1999,110,4.2,1850,UrbanStyle,28,"{""brand"":""Wrangler"",""waist"":36,""length"":32,""fit"":""Regular"",""stretch"":true,""color"":""Classic Blue""}"
+Pepe Jeans Cash Slim Jeans,Jeans,2499,0,4.3,950,UrbanStyle,35,"{""brand"":""Pepe Jeans"",""waist"":30,""length"":32,""fit"":""Slim"",""stretch"":true,""color"":""Grey""}"
+Jack & Jones Liam Skinny Jeans,Jeans,1799,150,4.0,1200,UrbanStyle,40,"{""brand"":""Jack & Jones"",""waist"":32,""length"":32,""fit"":""Skinny"",""stretch"":true,""color"":""Super Black""}"
+Lee Cooper Regular Straight Jeans,Jeans,1599,160,4.1,840,FashionHub,48,"{""brand"":""Lee Cooper"",""waist"":34,""length"":34,""fit"":""Straight"",""stretch"":false,""color"":""Medium Wash""}"
+Spykar Super Slim Fit Jeans,Jeans,2199,85,4.2,620,UrbanStyle,52,"{""brand"":""Spykar"",""waist"":32,""length"":32,""fit"":""Super Slim"",""stretch"":true,""color"":""Ice Blue""}"
+Calvin Klein Skinny Fit Jeans,Jeans,6999,40,4.7,350,EliteStore,32,"{""brand"":""Calvin Klein"",""waist"":31,""length"":32,""fit"":""Skinny"",""stretch"":true,""color"":""Dark Grey""}"
+Tommy Hilfiger Bleecker Slim Jeans,Jeans,5999,50,4.5,410,EliteStore,36,"{""brand"":""Tommy Hilfiger"",""waist"":33,""length"":32,""fit"":""Slim"",""stretch"":true,""color"":""Mid Blue""}"
+Peter England Regular Fit Jeans,Jeans,1299,0,3.9,350,EliteStore,78,"{""brand"":""Peter England"",""waist"":34,""length"":32,""fit"":""Regular"",""stretch"":false,""color"":""Black""}"
+United Colors of Benetton Slim Jeans,Jeans,2799,70,4.3,280,FashionHub,58,"{""brand"":""UCB"",""waist"":32,""length"":32,""fit"":""Slim"",""stretch"":true,""color"":""Dark Indigo""}"
+Dell Inspiron 14,Laptops,48990,45,4.3,520,TechWorld,28,"{""brand"":""Dell"",""processor"":""Intel i5-1335U"",""ram"":""16GB"",""storage"":""512GB SSD"",""display"":""14 inch"",""graphics"":""Intel Iris Xe"",""os"":""Windows 11""}"
+HP Victus 15 Ryzen 7,Laptops,68990,25,4.5,880,TechWorld,18,"{""brand"":""HP"",""processor"":""Ryzen 7 7735HS"",""ram"":""16GB"",""storage"":""512GB SSD"",""display"":""15.6 inch"",""graphics"":""RTX 4050"",""os"":""Windows 11""}"
+Lenovo Legion Slim 5,Laptops,104990,15,4.7,340,TechWorld,15,"{""brand"":""Lenovo"",""processor"":""Ryzen 7 7840HS"",""ram"":""16GB"",""storage"":""1TB SSD"",""display"":""16 inch WQXGA"",""graphics"":""RTX 4060"",""os"":""Windows 11""}"
+Apple MacBook Air M3,Laptops,114900,60,4.9,1500,TechWorld,4,"{""brand"":""Apple"",""processor"":""Apple M3 8-Core"",""ram"":""16GB"",""storage"":""512GB SSD"",""display"":""13.6 inch Liquid Retina"",""graphics"":""10-Core GPU"",""os"":""macOS""}"
+Apple MacBook Pro 14 M3 Pro,Laptops,199900,0,4.9,450,TechWorld,12,"{""brand"":""Apple"",""processor"":""Apple M3 Pro"",""ram"":""18GB"",""storage"":""512GB SSD"",""display"":""14.2 inch Liquid Retina XDR"",""graphics"":""14-Core GPU"",""os"":""macOS""}"
+Asus ROG Zephyrus G14,Laptops,149990,12,4.8,210,TechWorld,22,"{""brand"":""Asus"",""processor"":""Ryzen 9 8945HS"",""ram"":""32GB"",""storage"":""1TB SSD"",""display"":""14 inch OLED"",""graphics"":""RTX 4070"",""os"":""Windows 11""}"
+Acer Aspire Lite 15,Laptops,29990,110,4.0,1450,Digital Planet,35,"{""brand"":""Acer"",""processor"":""Intel i3-1215U"",""ram"":""8GB"",""storage"":""512GB SSD"",""display"":""15.6 inch"",""graphics"":""Intel UHD"",""os"":""Windows 11""}"
+HP Pavilion 15,Laptops,58990,30,4.3,640,Digital Planet,30,"{""brand"":""HP"",""processor"":""Intel i5-1340P"",""ram"":""16GB"",""storage"":""1TB SSD"",""display"":""15.6 inch"",""graphics"":""Intel Iris Xe"",""os"":""Windows 11""}"
+Asus Vivobook 16X,Laptops,64990,0,4.4,490,Digital Planet,34,"{""brand"":""Asus"",""processor"":""Intel i5-12500H"",""ram"":""16GB"",""storage"":""512GB SSD"",""display"":""16 inch"",""graphics"":""RTX 3050"",""os"":""Windows 11""}"
+Lenovo IdeaPad Slim 3,Laptops,36990,90,4.1,1120,Digital Planet,32,"{""brand"":""Lenovo"",""processor"":""Intel i3-1315U"",""ram"":""8GB"",""storage"":""512GB SSD"",""display"":""15.6 inch"",""graphics"":""Intel UHD"",""os"":""Windows 11""}"
+Samsung Galaxy Book4,Laptops,74990,18,4.5,180,TechWorld,45,"{""brand"":""Samsung"",""processor"":""Intel Core 5 120U"",""ram"":""16GB"",""storage"":""512GB SSD"",""display"":""15.6 inch"",""graphics"":""Intel Graphics"",""os"":""Windows 11""}"
+MSI Thin 15,Laptops,51990,22,4.2,310,Digital Planet,50,"{""brand"":""MSI"",""processor"":""Intel i5-12450H"",""ram"":""16GB"",""storage"":""512GB SSD"",""display"":""15.6 inch"",""graphics"":""RTX 2050"",""os"":""Windows 11""}"
+Samsung Galaxy S25 Ultra,Phones,124999,55,4.9,1850,TechWorld,3,"{""brand"":""Samsung"",""storage"":""256GB"",""ram"":""12GB"",""display"":""6.8 inch Dynamic AMOLED"",""battery"":""5000mAh"",""camera"":""200MP"",""color"":""Titanium Gray""}"
+Samsung Galaxy S25,Phones,79999,70,4.7,920,TechWorld,10,"{""brand"":""Samsung"",""storage"":""128GB"",""ram"":""8GB"",""display"":""6.2 inch Dynamic AMOLED"",""battery"":""4000mAh"",""camera"":""50MP"",""color"":""Onyx Black""}"
+Apple iPhone 16 Pro Max,Phones,144900,40,4.9,2500,TechWorld,2,"{""brand"":""Apple"",""storage"":""256GB"",""ram"":""8GB"",""display"":""6.9 inch Super Retina"",""battery"":""4685mAh"",""camera"":""48MP"",""color"":""Desert Titanium""}"
+Apple iPhone 16,Phones,79900,110,4.7,1980,TechWorld,6,"{""brand"":""Apple"",""storage"":""128GB"",""ram"":""8GB"",""display"":""6.1 inch Super Retina"",""battery"":""3561mAh"",""camera"":""48MP"",""color"":""Ultramarine""}"
+OnePlus 12,Phones,64999,0,4.6,1550,Digital Planet,14,"{""brand"":""OnePlus"",""storage"":""512GB"",""ram"":""16GB"",""display"":""6.82 inch AMOLED"",""battery"":""5400mAh"",""camera"":""50MP"",""color"":""Flowy Emerald""}"
+OnePlus Nord CE 4 Lite,Phones,19999,140,4.1,2890,Digital Planet,25,"{""brand"":""OnePlus"",""storage"":""128GB"",""ram"":""8GB"",""display"":""6.67 inch AMOLED"",""battery"":""5500mAh"",""camera"":""50MP"",""color"":""Super Canyon""}"
+Google Pixel 9 Pro,Phones,109999,25,4.8,610,TechWorld,15,"{""brand"":""Google"",""storage"":""256GB"",""ram"":""16GB"",""display"":""6.3 inch Actua"",""battery"":""4700mAh"",""camera"":""50MP"",""color"":""Obsidian""}"
+Redmi Note 13 Pro,Phones,25999,180,4.2,4200,Digital Planet,18,"{""brand"":""Xiaomi"",""storage"":""256GB"",""ram"":""8GB"",""display"":""6.67 inch AMOLED"",""battery"":""5100mAh"",""camera"":""200MP"",""color"":""Coral Purple""}"
+Realme GT 6T,Phones,30999,85,4.4,850,Digital Planet,29,"{""brand"":""Realme"",""storage"":""256GB"",""ram"":""12GB"",""display"":""6.78 inch LTPO"",""battery"":""5500mAh"",""camera"":""50MP"",""color"":""Fluid Silver""}"
+Motorola Edge 50 Pro,Phones,31999,0,4.5,1150,TechWorld,22,"{""brand"":""Motorola"",""storage"":""256GB"",""ram"":""12GB"",""display"":""6.7 inch pOLED"",""battery"":""4500mAh"",""camera"":""50MP"",""color"":""Black Beauty""}"
+Sony WH-1000XM5,Headphones,29990,45,4.8,3800,TechWorld,4,"{""brand"":""Sony"",""type"":""Over Ear"",""wireless"":true,""noise_cancelling"":true,""battery"":""30 hours"",""color"":""Silver""}"
+Bose QuietComfort Ultra,Headphones,35900,20,4.7,1400,TechWorld,10,"{""brand"":""Bose"",""type"":""Over Ear"",""wireless"":true,""noise_cancelling"":true,""battery"":""24 hours"",""color"":""Black""}"
+Sennheiser Accentum Wireless,Headphones,12990,65,4.4,510,Digital Planet,38,"{""brand"":""Sennheiser"",""type"":""Over Ear"",""wireless"":true,""noise_cancelling"":true,""battery"":""50 hours"",""color"":""White""}"
+JBL Tune 770NC,Headphones,5999,140,4.2,2890,Digital Planet,20,"{""brand"":""JBL"",""type"":""Over Ear"",""wireless"":true,""noise_cancelling"":true,""battery"":""70 hours"",""color"":""Blue""}"
+Sony WH-CH520,Headphones,4490,0,4.3,4500,Digital Planet,12,"{""brand"":""Sony"",""type"":""On Ear"",""wireless"":true,""noise_cancelling"":false,""battery"":""50 hours"",""color"":""Blue""}"
+boAt Rockerz 450,Headphones,1499,350,4.1,48000,FashionHub,1,"{""brand"":""boAt"",""type"":""On Ear"",""wireless"":true,""noise_cancelling"":false,""battery"":""15 hours"",""color"":""Hazel Beige""}"
+Sony WF-1000XM5,Earbuds,19990,35,4.6,1950,TechWorld,16,"{""brand"":""Sony"",""wireless"":true,""noise_cancelling"":true,""battery"":""8 hours"",""color"":""Black""}"
+Apple AirPods Pro 2,Earbuds,24900,110,4.8,4200,TechWorld,5,"{""brand"":""Apple"",""wireless"":true,""noise_cancelling"":true,""battery"":""6 hours"",""color"":""White""}"
+OnePlus Buds 3,Earbuds,5499,190,4.4,3200,Digital Planet,15,"{""brand"":""OnePlus"",""wireless"":true,""noise_cancelling"":true,""battery"":""10 hours"",""color"":""Splendid Blue""}"
+Realme Buds Air 6 Pro,Earbuds,4999,0,4.3,1800,Digital Planet,24,"{""brand"":""Realme"",""wireless"":true,""noise_cancelling"":true,""battery"":""7.5 hours"",""color"":""Titanium Twilight""}"
+boAt Airdopes 131,Earbuds,999,480,4.0,65000,FashionHub,2,"{""brand"":""boAt"",""wireless"":true,""noise_cancelling"":false,""battery"":""3 hours"",""color"":""Active Black""}"
+Titan Regalia Premium Analog,Watches,7995,65,4.4,310,EliteStore,40,"{""brand"":""Titan"",""strap"":""Metal"",""dial"":""Champagne"",""water_resistant"":""50m"",""gender"":""Men""}"
+Casio Enticer Minimalist,Watches,2995,120,4.3,1850,EliteStore,25,"{""brand"":""Casio"",""strap"":""Leather"",""dial"":""Black"",""water_resistant"":""50m"",""gender"":""Men""}"
+Fossil Grant Chronograph,Watches,10995,0,4.5,1420,EliteStore,28,"{""brand"":""Fossil"",""strap"":""Leather"",""dial"":""Blue"",""water_resistant"":""50m"",""gender"":""Men""}"
+Seiko 5 Sports Automatic,Watches,24000,20,4.7,560,EliteStore,22,"{""brand"":""Seiko"",""strap"":""Stainless Steel"",""dial"":""Black"",""water_resistant"":""100m"",""gender"":""Men""}"
+Casio G-Shock DW-5600,Watches,6495,150,4.8,4500,SportX,6,"{""brand"":""Casio"",""strap"":""Resin"",""dial"":""Grey"",""water_resistant"":""200m"",""gender"":""Unisex""}"
+Daniel Wellington Classic Sheffield,Watches,14999,40,4.2,340,EliteStore,55,"{""brand"":""Daniel Wellington"",""strap"":""Leather"",""dial"":""White"",""water_resistant"":""30m"",""gender"":""Unisex""}"
+Apple Watch Series 10,Smartwatches,46900,45,4.8,920,TechWorld,12,"{""brand"":""Apple"",""display"":""Retina LTPO OLED"",""gps"":true,""bluetooth"":""5.3"",""battery"":""18 hours"",""health_tracking"":true}"
+Samsung Galaxy Watch 7,Smartwatches,32999,55,4.6,680,TechWorld,18,"{""brand"":""Samsung"",""display"":""Super AMOLED"",""gps"":true,""bluetooth"":""5.3"",""battery"":""40 hours"",""health_tracking"":true}"
+Amazfit Active Smartwatch,Smartwatches,11999,110,4.3,1420,Digital Planet,25,"{""brand"":""Amazfit"",""display"":""AMOLED"",""gps"":true,""bluetooth"":""5.2"",""battery"":""14 days"",""health_tracking"":true}"
+Noise ColorFit Pulse 4,Smartwatches,2499,0,4.0,8900,FashionHub,11,"{""brand"":""Noise"",""display"":""TFT LCD"",""gps"":false,""bluetooth"":""5.3"",""battery"":""7 days"",""health_tracking"":true}"
+OnePlus Watch 2,Smartwatches,24999,30,4.5,410,TechWorld,32,"{""brand"":""OnePlus"",""display"":""AMOLED"",""gps"":true,""bluetooth"":""5.0"",""battery"":""100 hours"",""health_tracking"":true}"
+Sony Alpha 7 IV,Cameras,218900,12,4.8,430,TechWorld,15,"{""brand"":""Sony"",""type"":""Mirrorless"",""sensor"":""Full Frame"",""megapixels"":33,""video_resolution"":""4K 60p"",""wifi"":true}"
+Canon EOS R10,Cameras,75990,20,4.6,310,TechWorld,28,"{""brand"":""Canon"",""type"":""Mirrorless"",""sensor"":""APS-C"",""megapixels"":24.2,""video_resolution"":""4K 60p"",""wifi"":true}"
+GoPro HERO12 Black,Cameras,38000,85,4.7,1120,SportX,14,"{""brand"":""GoPro"",""type"":""Action"",""sensor"":""1/1.9 inch"",""megapixels"":27,""video_resolution"":""5.3K 60p"",""wifi"":true}"
+Insta360 X4,Cameras,53999,0,4.8,220,SportX,30,"{""brand"":""Insta360"",""type"":""360 Action"",""sensor"":""1/2 inch"",""megapixels"":72,""video_resolution"":""8K 30p"",""wifi"":true}"
+Atomic Habits,Books,350,450,4.8,12500,BookVerse,1,"{""author"":""James Clear"",""publisher"":""Penguin"",""language"":""English"",""pages"":320,""genre"":""Self Help""}"
+The Psychology of Money,Books,290,380,4.7,9800,BookVerse,2,"{""author"":""Morgan Housel"",""publisher"":""Harriman House"",""language"":""English"",""pages"":252,""genre"":""Finance""}"
+Ikigai,Books,299,500,4.6,8500,BookVerse,3,"{""author"":""Hector Garcia"",""publisher"":""Random House"",""language"":""English"",""pages"":208,""genre"":""Self Help""}"
+Sapiens,Books,450,0,4.7,6400,BookVerse,5,"{""author"":""Yuval Noah Harari"",""publisher"":""Vintage"",""language"":""English"",""pages"":512,""genre"":""History""}"
+Rich Dad Poor Dad,Books,320,410,4.5,14200,BookVerse,4,"{""author"":""Robert T. Kiyosaki"",""publisher"":""Warner Books"",""language"":""English"",""pages"":336,""genre"":""Personal Finance""}"
+Sleepwell Ortho Mattress,Furniture,12500,30,4.3,640,HomeNest,42,"{""material"":""Memory Foam"",""color"":""White"",""room"":""Bedroom"",""assembly_required"":false}"
+Sheesham Wood Coffee Table,Furniture,6999,45,4.4,320,HomeNest,48,"{""material"":""Sheesham Wood"",""color"":""Walnut"",""room"":""Living Room"",""assembly_required"":true}"
+Nilkamal Freedom Plastic Cabinet,Furniture,3499,150,4.1,1420,HomeNest,35,"{""material"":""Plastic"",""color"":""Rust"",""room"":""Study Room"",""assembly_required"":true}"
+Solimo 3-Seater Fabric Sofa,Furniture,18999,0,4.2,410,HomeNest,50,"{""material"":""Fabric and Wood"",""color"":""Grey"",""room"":""Living Room"",""assembly_required"":true}"
+Prestige Omega Deluxe Cookware Set,Kitchen,2499,180,4.2,4200,HomeNest,14,"{""material"":""Aluminium"",""capacity"":""3 Pieces"",""dishwasher_safe"":true}"
+Pigeon 1.5L Electric Kettle,Kitchen,699,500,4.0,18500,HomeNest,3,"{""material"":""Stainless Steel"",""capacity"":""1.5L"",""dishwasher_safe"":false}"
+Philips Daily Collection Toaster,Kitchen,1999,110,4.3,3100,Digital Planet,18,"{""material"":""Plastic"",""capacity"":""2 Slices"",""dishwasher_safe"":false}"
+L'Oreal Paris Hyaluronic Acid Serum,Beauty,499,350,4.4,8500,Beauty Basket,4,"{""brand"":""L'Oreal"",""skin_type"":""All"",""volume"":""30ml"",""organic"":false}"
+The Derma Co 10% Niacinamide Serum,Beauty,599,0,4.3,4200,Beauty Basket,8,"{""brand"":""The Derma Co"",""skin_type"":""Acne-prone"",""volume"":""30ml"",""organic"":false}"
+Nivea Soft Light Moisturizer,Beauty,299,600,4.5,15200,Beauty Basket,2,"{""brand"":""Nivea"",""skin_type"":""Normal"",""volume"":""200ml"",""organic"":false}"
+Minimalist 10% Vitamin C Serum,Beauty,699,280,4.3,6100,Beauty Basket,7,"{""brand"":""Minimalist"",""skin_type"":""All"",""volume"":""30ml"",""organic"":false}"
+Cosrx Snail Mucin Essence,Beauty,1450,140,4.7,2800,Beauty Basket,12,"{""brand"":""Cosrx"",""skin_type"":""Dry"",""volume"":""100ml"",""organic"":true}"
+Nivia Storm Football,Sports,399,450,4.2,12500,SportX,5,"{""sport"":""Football"",""material"":""Rubber"",""size"":""5"",""waterproof"":true}"
+Yonex ZR 100 Light Badminton Racket,Sports,699,320,4.1,8900,SportX,9,"{""sport"":""Badminton"",""material"":""Aluminium"",""size"":""Standard"",""waterproof"":false}"
+Nivia Heavy Tennis Ball (Pack of 6),Sports,450,600,4.3,3400,SportX,15,"{""sport"":""Cricket"",""material"":""Rubber"",""size"":""Standard"",""waterproof"":true}"
+Kore DM 20Kg Home Gym Set,Fitness,1899,0,3.9,4500,SportX,24,"{""sport"":""Fitness"",""material"":""PVC"",""size"":""20Kg"",""waterproof"":true}"
+Boldfit Yoga Mat 6mm,Fitness,699,400,4.4,9800,SportX,3,"{""sport"":""Yoga"",""material"":""TPE"",""size"":""Standard"",""waterproof"":true}"
+Fitkit FT098 Series Treadmill,Fitness,14999,15,4.1,850,SportX,44,"{""sport"":""Running"",""material"":""Alloy Steel"",""size"":""Motorized"",""waterproof"":false}"
+Skybags Cardiff 35L Backpack,Backpacks,1299,220,4.2,4200,FashionHub,16,"{""brand"":""Skybags"",""capacity"":""35L"",""color"":""Blue"",""water_resistant"":true,""material"":""Polyester""}"
+American Tourister Cruze 32L,Backpacks,1899,150,4.4,2800,FashionHub,18,"{""brand"":""American Tourister"",""capacity"":""32L"",""color"":""Black"",""water_resistant"":true,""material"":""Polyester""}"
+Wildcraft Workpacks Plus 38L,Backpacks,2199,0,4.5,1950,SportX,20,"{""brand"":""Wildcraft"",""capacity"":""38L"",""color"":""Grey"",""water_resistant"":true,""material"":""Nylon""}"
