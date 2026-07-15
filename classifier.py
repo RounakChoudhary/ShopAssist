@@ -9,7 +9,9 @@ async def classify_intent(user_message: str) -> dict:
     Falls back to 'main_llm' structure if JSON serialization or parsing collapses.
     """
     try:
+        
         # Involve the gatekeeper LLM to classify the intent of user message
+        
         guard_response = await client.chat.completions.create(
             model="llama-3.1-8b-instant",
             messages=[
@@ -25,6 +27,7 @@ async def classify_intent(user_message: str) -> dict:
         guard_data = json.loads(raw_content)
         
         # If model outputs invalid structure keys, normalize safely
+        
         if "intent" not in guard_data:
             guard_data["intent"] = "main_llm"
             guard_data["confidence"] = "low"
@@ -33,7 +36,9 @@ async def classify_intent(user_message: str) -> dict:
 
     except json.JSONDecodeError as json_err:
         print(f"[DEV WARNING] Gatekeeper JSON broken: {str(json_err)} | Content: {raw_content}")
+        
         # Safely fallback to main_llm if JSON parsing fails
+        
         return {"intent": "main_llm", "confidence": "low", "reason": "JSON decode failure"}
         
     except Exception as e:

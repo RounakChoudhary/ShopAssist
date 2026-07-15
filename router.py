@@ -2,6 +2,20 @@ import random
 from fastapi import HTTPException
 from config import client, GREETING_RESPONSES
 from prompts import SHOPASSIST_SYSTEM_PROMPT
+from query_builder import run_query
+
+# TEMPORARY: no param extraction wired yet, so every database_query request
+# just returns top-ranked products with no filters applied. Real extraction
+# of filters from user_message is the next step — this only proves the DB
+# plumbing works end-to-end.
+DEFAULT_PARAMS = {
+    "category": None,
+    "price_lt": None,
+    "price_gt": None,
+    "attributes": {},
+    "sort": "best_rank",
+    "limit": 5
+}
 
 async def handle_routing(intent_data: dict, user_message: str) -> dict:
     intent = intent_data.get("intent")
@@ -24,9 +38,30 @@ async def handle_routing(intent_data: dict, user_message: str) -> dict:
 
     # Route 3: Database Search
     elif intent == "database_query":
-        # Placeholder entry point for PostGIS / Postgres integration later
         print("[DEV LOG] Routing directly to Database Branch...")
-        return {"response": "Gatekeeper classified this as a database query"}
+        try:
+            params = intent_data.get("filters") or {}
+            rows = run_query(params)
+            print(f"params: {params}")
+      
+        except Exception as db_err:
+            print(f"[DEV ERROR] Database query execution failed: {str(db_err)}")
+            raise HTTPException(status_code=500, detail="Database query failed.")
+
+        if not rows:
+            return {"response": "I couldn't find any products matching that. Want to try different filters?"}
+
+        # Format rows into a plain, scannable reply — no LLM call needed for this branch
+        lines = []
+        for row in rows:
+            line = f"- {row['product_name']} ({row['category']}) — ${row['price']}"
+            if row.get("stock_quantity") is not None:
+                line += f", {row['stock_quantity']} in stock"
+            if row.get("rating") is not None:
+                line += f", {row['rating']}★ ({row.get('num_reviews', 0)} reviews)"
+            lines.append(line)
+
+        return {"response": "\n".join(lines)}
 
     # Route 4: Main Reasoning LLM Agent
     else:
