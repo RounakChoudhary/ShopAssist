@@ -23,6 +23,9 @@ client = AsyncOpenAI(
     base_url="https://api.groq.com/openai/v1"
 )
 
+# Embedding Model
+EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
+
 # hardcoded greetings
 
 GREETING_RESPONSES = [
