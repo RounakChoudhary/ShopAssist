@@ -3,6 +3,7 @@ from fastapi import HTTPException
 from config import client, GREETING_RESPONSES
 from prompts import SHOPASSIST_SYSTEM_PROMPT
 from query_builder import run_query
+from rag.policy_service import answer_policy_query
 
 # TEMPORARY: no param extraction wired yet, so every database_query request
 # just returns top-ranked products with no filters applied. Real extraction
@@ -36,7 +37,16 @@ async def handle_routing(intent_data: dict, user_message: str) -> dict:
     elif intent == "greetings":
         return {"response": random.choice(GREETING_RESPONSES)}
 
-    # Route 3: Database Search
+    # Route 3: Policy RAG Search
+    elif intent == "policy_query":
+        print("[DEV LOG] Routing to Policy RAG Branch...")
+        try:
+            return await answer_policy_query(user_message)
+        except Exception as policy_err:
+            print(f"[DEV ERROR] Policy query failed: {str(policy_err)}")
+            raise HTTPException(status_code=502, detail="Policy information service unavailable.")
+
+    # Route 4: Database Search
     elif intent == "database_query":
         print("[DEV LOG] Routing directly to Database Branch...")
         try:
@@ -63,7 +73,7 @@ async def handle_routing(intent_data: dict, user_message: str) -> dict:
 
         return {"response": "\n".join(lines)}
 
-    # Route 4: Main Reasoning LLM Agent
+    # Route 5: Main Reasoning LLM Agent
     else:
         try:
             print("[DEV LOG] Invoking Main Shopping LLM Execution...")

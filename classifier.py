@@ -28,7 +28,15 @@ async def classify_intent(user_message: str) -> dict:
         
         # If model outputs invalid structure keys, normalize safely
         
-        if "intent" not in guard_data:
+        VALID_INTENTS = {
+            "greetings",
+            "database_query",
+            "policy_query",
+            "main_llm",
+            "irrelevant"
+        }
+
+        if guard_data.get("intent") not in VALID_INTENTS:
             guard_data["intent"] = "main_llm"
             guard_data["confidence"] = "low"
             
