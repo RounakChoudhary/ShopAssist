@@ -16,7 +16,10 @@ class VectorStore:
     def create_collection(self, collection_name):
         if self.client is None:
             raise RuntimeError("Call connect() before create_collection().")
-        self.collection = self.client.get_or_create_collection(name=collection_name)
+        self.collection = self.client.get_or_create_collection(
+            name=collection_name,
+            metadata={"hnsw:space": "cosine"},
+        )
         return self.collection
 
     def add_chunks(self, embedded_chunks):
@@ -41,13 +44,15 @@ class VectorStore:
             metadatas.append(metadata)
             chunk_id = f"{chunk.filename}_{chunk.chunk_index}"
             ids.append(chunk_id)
-        self.collection.add(
+        self.collection.upsert(
             ids=ids, documents=documents, embeddings=embeddings, metadatas=metadatas
         )
 
     def query(self, query_embedding, top_k):
         if self.collection is None:
-            raise RuntimeError("Call create_collection() before  before query().")
+            raise RuntimeError("Call create_collection() before query().")
+        if top_k < 1:
+            raise ValueError("top_k must be greater than or equal to 1.")
         results = self.collection.query(
             query_embeddings=[query_embedding], n_results=top_k
         )
@@ -65,6 +70,3 @@ class VectorStore:
             )
             retrieved_chunks.append(retrieved_chunk)
         return retrieved_chunks
-
-    def delete_collection(self):
-        pass

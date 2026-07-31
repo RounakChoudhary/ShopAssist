@@ -1,11 +1,16 @@
 from sentence_transformers import SentenceTransformer
 from config import EMBEDDING_MODEL
 import numpy as np
+from functools import lru_cache
 
-try:
-    embedding_model = SentenceTransformer(EMBEDDING_MODEL)
-except Exception as e:
-    raise RuntimeError(f"Failed to load embedding model '{EMBEDDING_MODEL}'.") from e
+@lru_cache
+def get_embedding_model() -> SentenceTransformer:
+    try:
+        return SentenceTransformer(EMBEDDING_MODEL)
+    except Exception as exc:
+        raise RuntimeError(
+            f"Failed to load embedding model '{EMBEDDING_MODEL}'."
+        ) from exc
 
 
 def get_embedding(text: str) -> np.ndarray:
@@ -18,7 +23,7 @@ def get_embedding(text: str) -> np.ndarray:
     Returns:
         np.ndarray: Embedding vector.
     """
-    return embedding_model.encode(text)
+    return get_embedding_model().encode(text)
 
 
 def get_embeddings(texts: list[str]) -> np.ndarray:
@@ -31,4 +36,4 @@ def get_embeddings(texts: list[str]) -> np.ndarray:
     Returns:
         np.ndarray: Embedding vectors.
     """
-    return embedding_model.encode(texts)
+    return get_embedding_model().encode(texts)

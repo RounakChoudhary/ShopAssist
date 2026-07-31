@@ -65,7 +65,7 @@ def test_add_and_query_chunks_preserves_chunk_data(store):
     assert retrieved.filename == chunk.filename
     assert retrieved.section_title == chunk.section_title
     assert retrieved.chunk_index == chunk.chunk_index
-    assert retrieved.score == pytest.approx(0.0)
+    assert retrieved.score == pytest.approx(0.0, abs=1e-6)
 
 
 def test_add_chunks_requires_collection(store):
