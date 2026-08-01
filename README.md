@@ -53,9 +53,15 @@ To save on API token usage and keep response times fast, incoming messages don't
 
 ##  Local Setup Guide
 
-### 1. Environment Setup
+### 1. Prerequisites
 
-Clone the repository and set up your Python virtual environment:
+Make sure you have:
+
+- Python 3.10+ installed
+- Git available on your machine
+- A local Redis instance running on `localhost:6379` (the backend uses Redis via the configured client)
+
+### 2. Clone and Create a Virtual Environment
 
 ```bash
 git clone https://github.com/RounakChoudhary/ShopAssist.git
@@ -70,23 +76,41 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 2. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
-pip install fastapi uvicorn openai python-dotenv
+pip install -r requirements.txt
 ```
 
-### 3. Add API Keys
+### 4. Configure Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root with your API key:
 
 ```env
 OPENAI_API_KEY=your_groq_api_key_here
 ```
 
-> **Note:** If you're using the Groq SDK, replace the variable name with whatever your application expects (for example, `GROQ_API_KEY`).
+Optional variables you can override:
 
-### 4. Run the Backend
+```env
+POLICY_FOLDER=data
+CHROMA_DB_PATH=chroma_db
+CHROMA_COLLECTION_NAME=shop_policies
+```
+
+### 5. Build the Local Policy Index
+
+Before using the chat flow, ingest the policy documents into the local Chroma vector store:
+
+```bash
+python -m scripts.ingest_policies
+```
+
+This step reads the Markdown policy files from the `data/` folder and creates or refreshes the local vector database under `chroma_db/`.
+
+### 6. Run the Backend
+
+Start the FastAPI application:
 
 ```bash
 uvicorn main:app --reload
@@ -94,8 +118,16 @@ uvicorn main:app --reload
 
 Open your browser to:
 
-```
+```text
 http://127.0.0.1:8000/docs
 ```
 
-to interact with and test the chat endpoints through the built-in Swagger interface.
+You can test the API through the Swagger UI, including the `GET /` health check and the `POST /chat` endpoint.
+
+### 7. Optional Verification
+
+You can also run a sample retrieval check against the ingested policy index:
+
+```bash
+python -m scripts.query_policies
+```
