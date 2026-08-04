@@ -4,6 +4,7 @@ from config import client, GREETING_RESPONSES
 from prompts import SHOPASSIST_SYSTEM_PROMPT
 from query_builder import run_query
 from rag.policy_service import answer_policy_query
+from session_store import trim_history
 
 # TEMPORARY: no param extraction wired yet, so every database_query request
 # just returns top-ranked products with no filters applied. Real extraction
@@ -18,7 +19,7 @@ DEFAULT_PARAMS = {
     "limit": 5
 }
 
-async def handle_routing(intent_data: dict, user_message: str) -> dict:
+async def handle_routing(intent_data: dict, user_message: str, conversation_history: list[dict] | None = None) -> dict:
     intent = intent_data.get("intent")
     confidence = intent_data.get("confidence", "high")
 
@@ -53,7 +54,7 @@ async def handle_routing(intent_data: dict, user_message: str) -> dict:
             params = intent_data.get("filters") or {}
             rows = run_query(params)
             print(f"params: {params}")
-      
+
         except Exception as db_err:
             print(f"[DEV ERROR] Database query execution failed: {str(db_err)}")
             raise HTTPException(status_code=500, detail="Database query failed.")
@@ -77,17 +78,25 @@ async def handle_routing(intent_data: dict, user_message: str) -> dict:
     else:
         try:
             print("[DEV LOG] Invoking Main Shopping LLM Execution...")
+
+            # only route that actually needs history — greetings/irrelevant/db
+            # lookups don't benefit from it and we don't want to pay tokens for it
+            recent_turns = trim_history(conversation_history, max_turns=6)
+
+            messages = [
+                {"role": "system", "content": SHOPASSIST_SYSTEM_PROMPT},
+                *recent_turns,
+                {"role": "user", "content": user_message},
+            ]
+
             response = await client.chat.completions.create(
                 model="llama-3.1-8b-instant",
-                messages=[
-                    {"role": "system", "content": SHOPASSIST_SYSTEM_PROMPT},
-                    {"role": "user", "content": user_message}
-                ],
+                messages=messages,
                 temperature=0.4,
                 max_tokens=300
             )
             return {"response": response.choices[0].message.content}
-            
+
         except Exception as llm_err:
             print(f"[DEV ERROR] Main Shopping LLM API Call Failed: {str(llm_err)}")
             raise HTTPException(status_code=502, detail="Shopping intelligence layer down.")
